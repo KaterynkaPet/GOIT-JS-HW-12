@@ -1,3 +1,4 @@
+
 import SimpleLightbox from "simplelightbox";
 import "simplelightbox/dist/simple-lightbox.min.css";
 
@@ -31,7 +32,7 @@ function hideLoader() {
 formEl.addEventListener('submit', inputValue);
 async function inputValue(e) {
     e.preventDefault();
-    imgGallery.innerHTML = '<div class="loader"></div>';
+    imgGallery.innerHTML = '';
     startPage = 1;
     query = e.currentTarget.elements.image.value.trim();
     showLoader();
@@ -74,7 +75,7 @@ async function inputValue(e) {
     e.target.reset();
 }
     
-//---------------------
+//---------------------Load More btn
 
 function removeLoadBtn() {
     loadBtn.classList.remove("is-hidden");

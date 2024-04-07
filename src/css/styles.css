@@ -59,7 +59,7 @@
   outline: none;
 }
 
-.btn-submit, .btn-load {
+.btn-submit, .load-btn {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -138,6 +138,10 @@ img {
   box-sizing: border-box;
   animation: rotation 2s linear infinite;
 }
+
+ .is-hidden {
+   display: none;
+ }
 
 .loader::after {
   content: '';
